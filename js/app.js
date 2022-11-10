@@ -51,4 +51,5 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 4000,
     })
+
 });

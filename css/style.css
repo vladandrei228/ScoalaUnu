@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
 :root {
     --brand: #1674e7;
@@ -36,6 +36,7 @@ a {
     color: var(--dark);
     transition: all 0.4s ease;
     font-weight: 500;
+    text-decoration: none;
 }
 
 a:hover {
@@ -119,7 +120,7 @@ section {
 
 /* navbar */
 .logo-text{
-    font-family: "Kolker Brush"!important;
+    font-family: 'Playball', cursive;
 }
 
 
@@ -495,4 +496,18 @@ input.form-control {
 .form-control:focus {
     box-shadow: none;
     border-color: var(--brand);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.contactinfo:hover {
+    color: #fff;
 }
