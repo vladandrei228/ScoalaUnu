@@ -107,7 +107,7 @@ section {
 }
 
 .slide2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/scoala6.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/galeriefp/4.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -462,6 +462,10 @@ footer p {
     color: #ADB3B9;
 }
 
+.text-footer {
+    color: gray;
+}
+
 footer .social-icons a {
     width: 50px;
     height: 50px;
@@ -510,4 +514,13 @@ input.form-control {
 
 .contactinfo:hover {
     color: #fff;
+}
+
+.highlighted{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.highlighted:hover {
+    color: #ffd700;
 }
