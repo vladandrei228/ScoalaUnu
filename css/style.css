@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 :root {
     --brand: #1674e7;
@@ -120,7 +121,7 @@ section {
 
 /* navbar */
 .logo-text{
-    font-family: 'Playball', cursive;
+    font-family: 'Great Vibes', cursive;
 }
 
 
