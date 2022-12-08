@@ -527,3 +527,9 @@ input.form-control {
 .highlighted:hover {
     color: #ffd700;
 }
+
+.headimg{
+    background-color: transparent !important;
+    width:100%;
+    height:100%;
+}
