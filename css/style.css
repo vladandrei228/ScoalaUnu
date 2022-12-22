@@ -534,7 +534,7 @@ input.form-control {
 
 .btn-custom{
     border-color: var(--brand);
-    background-color: #fff;
+    background-color: var(--brand);
     border-width: 2px;
     border-radius: 0px;
     color: var(--dark);
@@ -543,8 +543,7 @@ input.form-control {
 }
 
 .btn-custom:hover{
-    border-color: var(--brand);
-    background-color: var(--brand);
+    background-color: navy;
     color: #fff;
     width: 200px;
 }
