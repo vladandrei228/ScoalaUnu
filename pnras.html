@@ -101,7 +101,7 @@
             </div>
         </div>
     </section>
-    <section id="Smurd" class="text-center">
+    <section class="text-center">
         <div class="container">
             <h4>-Galerie foto-</h4>
             <div class="gallery">
@@ -132,6 +132,14 @@
             </div>
         </div>
         <script src="./js/lightbox-plus-jquery.js"></script>
+    </section>
+    <section class="text-center">
+        <div class="container mt-5">
+            <h4>Articole din presa</h4>
+            <div class="row" id="newsSection">
+                
+            </div>
+        </div>
     </section>
     <footer>
         <div class="footer-top text-center">
@@ -170,6 +178,44 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const newsData = [
+        {
+            title: "Activități pentru combaterea abandonului școlar la două școli din județul Dolj",
+            image: "https://www.radiooltenia.ro/wp-content/uploads/2025/02/Bailesti-2-850x479.jpeg",
+            link: "https://www.radiooltenia.ro/activitati-pentru-combaterea-abandonului-scolar-la-doua-scoli-din-judetul-dolj/"
+        },
+        {
+            title: "Combaterea fenomenului abandonului școlar la Băilești și Urzicuța",
+            image: "https://realpress.ro/wp-content/uploads/2025/02/Combaterea-fenomenului-abandonului-scolar-la-Bailesti-si-Urzicuta-2-696x537.jpg",
+            link: "https://realpress.ro/combaterea-fenomenului-abandonului-scolar-la-bailesti-si-urzicuta/"
+        },
+        // Add more news items here
+    ];
+
+    const newsSection = document.getElementById("newsSection");
+
+    newsData.forEach(news => {
+        const newsItem = document.createElement("div");
+        newsItem.classList.add("col-md-6");
+
+        const newsContent = `
+            <div class="card mb-4 shadow-sm">
+                <img src="${news.image}" class="card-img-top" alt="${news.title}">
+                <div class="card-body">
+                    <h5 class="card-title">${news.title}</h5>
+                    <a href="${news.link}" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        `;
+
+        newsItem.innerHTML = newsContent;
+        newsSection.appendChild(newsItem);
+    });
+});
+
+    </script>
 </body>
 
 </html>
